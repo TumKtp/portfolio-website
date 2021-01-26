@@ -60,4 +60,30 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script>
+    console.log("Connected");
+    const allSkillBars = document.querySelectorAll(".skillbar");
+    console.log(allSkillBars);
+    window.addEventListener("scroll", function () {
+      console.log(allSkillBars[0].dataset.percent);
+      const scrollPos = window.scrollY;
+      if (scrollPos > 20)
+        document.querySelector(".navbar").classList.add("sticky");
+      else document.querySelector(".navbar").classList.remove("sticky");
+
+      console.log(scrollPos, window.innerHeight, allSkillBars[0].offsetTop);
+      if (scrollPos + window.innerHeight >= 1280) {
+        if (allSkillBars[0].children[1].classList.contains("animated")) {
+          console.log("DONE");
+        } else {
+          console.log('DIDN"T');
+          allSkillBars.forEach((skill) => {
+            console.log(skill);
+            skill.children[1].style.width = skill.dataset.percent;
+            skill.children[1].classList.add("animated");
+          });
+        }
+      }
+    });
+  </script>
 </html>

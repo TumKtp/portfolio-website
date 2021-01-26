@@ -9,7 +9,7 @@ export default function About() {
           class="col-12 col-md-5 col-xl-3 about-img align-self-center"
           src={process.env.PUBLIC_URL + "/images/about-01.jpg"}
         />
-        <div class="col-12 col-md-5 col-xl-6 align-self-center mt-3 mt-s-0">
+        <div class="col-12 col-md-6 col-xl-9 align-self-center mt-3 mt-s-0">
           <div class="title">
             I'm Kittiphop and I'm <span>Developer</span>
           </div>
@@ -19,8 +19,14 @@ export default function About() {
             dolor laudantium autem ipsam quas minima facilis modi adipisci ea.
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat
             nam repudiandae rerum eius officiis? Laboriosam nostrum earum
-            inventore laborum distinctio, fugit tempora illo unde modi
+            inventore laborum distinctio, fugit tempora illo unde modi Lorem
+            ipsum, dolor sit amet consectetur adipisicing elit. Repellat nam
+            repudiandae rerum eius officiis? Laboriosam nostrum earum inventore
+            laborum distinctio, fugit tempora illo unde modi
           </div>
+          <button type="button" class="btn btn-outline-secondary mt-4">
+            More Info
+          </button>
         </div>
       </div>
     </section>

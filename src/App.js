@@ -1,14 +1,15 @@
 import "./App.css";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import About from "./components/About";
-import "./script";
+import Navbar from "./pages/Navbar";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Skill from "./pages/Skill";
 function App() {
   return (
     <div>
       <Navbar />
       <Home />
       <About />
+      <Skill />
     </div>
   );
 }
