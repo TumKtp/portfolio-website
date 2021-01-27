@@ -25,26 +25,37 @@ nav {
 #navLinkId {
   font-size: 1.2rem;
   font-weight: bold;
-  color: rgb(199, 199, 181);
+  color: rgb(147, 149, 151);
 }
 #navBrandId {
   font-size: 2rem;
   font-weight: bold;
-  color: rgb(199, 199, 181);
+  color: rgb(147, 149, 151);
   transition: all 0.5s ease;
 }
+
+li a:after {
+  content: "";
+  display: block;
+  height: 3px;
+  background: rgb(151, 153, 155);
+  transition: width 0.3s ease 0s;
+  width: 0;
+}
+li a:hover:after {
+  width: 100%;
+}
+
 nav.sticky {
-  background-color: white;
-  color: black;
+  background-color: rgb(240, 238, 233);
   height: 60px;
 }
-
-nav.sticky li a:after {
+/* nav.sticky li a:after {
   background: transparent;
-}
+} */
 
 .home-content {
-  color: aliceblue;
+  color: rgb(240, 238, 233);
 }
 .home .home-content .text-1 {
   font-size: 27px;
@@ -59,20 +70,9 @@ nav.sticky li a:after {
 .home .home-content .text-3 span {
   font-size: 40px;
   font-weight: bold;
-  color: darkgray;
+  color: rgb(250, 224, 83);
 }
 
-li a:after {
-  content: "";
-  display: block;
-  height: 3px;
-  background: rgb(199, 199, 181);
-  transition: width 0.3s ease 0s;
-  width: 0;
-}
-li a:hover:after {
-  width: 100%;
-}
 /* Home Styling */
 .home {
   height: 100vh;
@@ -93,12 +93,12 @@ li a:hover:after {
   text-align: justify;
 }
 .about-me .title span {
-  color: gold;
+  color: rgb(250, 224, 83);
 }
 
 /* Skill styling */
 .skill {
-  background-color: black;
+  background-color: rgb(147, 149, 151);
 }
 .skillbar {
   position: relative;
@@ -131,7 +131,7 @@ li a:hover:after {
   font-weight: bold;
   font-size: 13px;
   color: #ffffff;
-  background: #6adcfa;
+
   -webkit-border-top-left-radius: 3px;
   -webkit-border-bottom-left-radius: 4px;
   -moz-border-radius-topleft: 3px;
@@ -142,7 +142,7 @@ li a:hover:after {
 
 .skillbar-title span {
   display: block;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.2);
   padding: 0 20px;
   height: 35px;
   line-height: 35px;
@@ -151,7 +151,6 @@ li a:hover:after {
 .skillbar-bar {
   height: 35px;
   width: 0%;
-  background: #6adcfa;
   transition: all 1s ease-in;
   border-radius: 3px;
   -moz-border-radius: 3px;
@@ -165,6 +164,54 @@ li a:hover:after {
   font-size: 11px;
   height: 35px;
   line-height: 35px;
-  color: #ffffff;
-  color: rgba(0, 0, 0, 0.4);
+  color: black;
+}
+/* Project */
+.slider {
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.slider__wrapper {
+  display: flex;
+  margin: 0 calc(var(4vmin) * -1);
+  position: absolute;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+.slide {
+  align-items: center;
+  opacity: 0.25;
+  transition: all 0.5s ease;
+}
+.slide--previous:hover,
+.slide--next:hover {
+  opacity: 0.5;
+}
+.slide--previous {
+  cursor: w-resize;
+}
+.slide--next {
+  cursor: e-resize;
+}
+.slide--next:hover,
+.slide--previous:hover {
+  transform: translateY(-2%);
+}
+
+.slide--current {
+  opacity: 1;
+}
+
+.previous {
+  background-color: transparent;
+  color: black;
+}
+
+.next {
+  background-color: transparent;
+  color: black;
 }

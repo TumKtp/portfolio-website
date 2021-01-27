@@ -9,12 +9,12 @@ const skillList = [
   { title: "Python", percent: "30%" },
   { title: "JavaScript", percent: "80%" },
   { title: "GoogleApi", percent: "80%" },
-  { title: "React", percent: "80%" },
-  { title: "NodeJS", percent: "80%" },
-  { title: "MongoDB", percent: "80%" },
-  { title: "Express", percent: "80%" },
-  { title: "DataSci", percent: "80%" },
-  { title: "Heroku", percent: "80%" },
+  { title: "React", percent: "60%" },
+  { title: "NodeJS", percent: "95%" },
+  { title: "MongoDB", percent: "90%" },
+  { title: "Express", percent: "92%" },
+  { title: "DataSci", percent: "76%" },
+  { title: "Heroku", percent: "86%" },
 ];
 export default function Skill() {
   return (
