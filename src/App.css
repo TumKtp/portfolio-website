@@ -16,6 +16,12 @@ body {
   font-weight: 600;
   margin-bottom: 10px;
 }
+.title-dark {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: white;
+}
 /* Header Styling */
 nav {
   background-color: transparent;
@@ -95,6 +101,76 @@ nav.sticky {
 .about-me .title span {
   color: rgb(250, 224, 83);
 }
+.btn-about {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  min-width: 150px;
+}
+.btn-about span {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 20px;
+  transition: 0.3s ease-out;
+}
+
+.btn-about.hover-border-1:active,
+.btn-about.hover-border-1:hover,
+.btn-about.hover-border-1:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+.btn-about.hover-border-1::before,
+.btn-about.hover-border-1::after {
+  position: absolute;
+  content: "";
+}
+.btn-about {
+  padding: 5px;
+}
+.btn-about span {
+  color: rgb(255, 255, 255);
+  background-color: rgb(207, 92, 120);
+}
+.btn-about::before,
+.btn-about::after {
+  background: transparent;
+  z-index: 2;
+}
+.btn-about.hover-border-1::before,
+.btn-about.hover-border-1::after {
+  width: 10%;
+  height: 25%;
+  transition: 0.3s ease-out;
+}
+.btn-about.hover-border-1::before {
+  top: 0;
+  left: 0;
+  border-left: 1px solid rgb(207, 92, 120);
+  border-top: 1px solid rgb(207, 92, 120);
+}
+.btn-about.hover-border-1::after {
+  bottom: 0;
+  right: 0;
+  border-right: 1px solid rgb(207, 92, 120);
+  border-bottom: 1px solid rgb(207, 92, 120);
+}
+.btn-about.hover-border-1:hover::before,
+.btn-about.hover-border-1:hover::after {
+  width: 99%;
+  height: 98%;
+}
 
 /* Skill styling */
 .skill {
@@ -151,7 +227,7 @@ nav.sticky {
 .skillbar-bar {
   height: 35px;
   width: 0%;
-  transition: all 1s ease-in;
+  transition: all 1s ease-out;
   border-radius: 3px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -168,50 +244,76 @@ nav.sticky {
 }
 /* Project */
 .slider {
-  height: 500px;
-  margin: 0 auto;
   position: relative;
-  width: 100%;
   overflow-x: hidden;
+  height: 500px;
 }
-
 .slider__wrapper {
   display: flex;
-  margin: 0 calc(var(4vmin) * -1);
+  margin: 0 5%;
   position: absolute;
-  transition: all 0.5s ease;
-  overflow: hidden;
+  transition: all 0.3s ease-out;
 }
 .slide {
   align-items: center;
   opacity: 0.25;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease-out;
 }
-.slide--previous:hover,
-.slide--next:hover {
+.slide-previous:hover,
+.slide-next:hover {
   opacity: 0.5;
 }
-.slide--previous {
+.slide-previous {
   cursor: w-resize;
 }
-.slide--next {
+.slide-next {
   cursor: e-resize;
 }
-.slide--next:hover,
-.slide--previous:hover {
+.slide-next:hover,
+.slide-previous:hover {
   transform: translateY(-2%);
 }
-
-.slide--current {
+.slide-current {
   opacity: 1;
 }
-
+.slide-img {
+  object-fit: cover;
+  height: 50%;
+}
 .previous {
   background-color: transparent;
   color: black;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
 }
-
 .next {
   background-color: transparent;
   color: black;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.previous:hover {
+  color: rgb(147, 149, 151);
+}
+.next:hover {
+  color: rgb(147, 149, 151);
+}
+.project-badge {
+  font-size: 1.6rem;
+}
+.github-badge {
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+.website-badge {
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+.github-badge:hover {
+  color: rgb(147, 149, 151);
+  cursor: pointer;
+}
+.website-badge:hover {
+  color: rgb(147, 149, 151);
+  cursor: pointer;
 }

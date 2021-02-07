@@ -18,8 +18,10 @@ const skillList = [
 ];
 export default function Skill() {
   return (
-    <section className="skill pt-5">
-      <div class="heading-dark d-flex justify-content-center mb-4">Skills</div>
+    <section className="skill pt-5 pb-5">
+      <div className="heading-dark d-flex justify-content-center mb-4">
+        Skills
+      </div>
 
       <div className="row mx-3">
         {skillList.map((skill) => (
