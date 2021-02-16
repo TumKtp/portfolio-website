@@ -1,7 +1,15 @@
 import React from "react";
 
 export default function ProjectCard({ current, handleSlideClick, slide }) {
-  const { src, headline, index, desc } = slide;
+  const {
+    src,
+    headline,
+    index,
+    desc,
+    githubLink,
+    productionLink,
+    techStack,
+  } = slide;
   const slideClick = () => {
     handleSlideClick(slide.index);
   };
@@ -18,13 +26,36 @@ export default function ProjectCard({ current, handleSlideClick, slide }) {
         style={{ width: "20rem", height: "450px" }}
         onClick={slideClick}
       >
-        <img className="card-img-top slide-img" alt={headline} src={src} />
+        <img
+          className="card-img-top slide-img"
+          alt={headline}
+          src={src}
+          height="200px"
+        />
         <div className="card-body">
-          <h5 className="card-title">{headline}</h5>
-          <p className="card-text">{desc.slice(0, 150) + "..."}</p>
-          <div className="d-flex project-badge">
-            <i className="fab fa-github fa-fw github-badge" />
-            <i className="fab fa-chrome fa-fw website-badge" />
+          <h5 className="card-title">
+            <b>{headline}</b>
+          </h5>
+          <p className="card-text">{desc}</p>
+          {techStack && (
+            <h6 className="card-title">
+              <b>Tech Stack</b>
+            </h6>
+          )}
+          <ul>{techStack && techStack.map((tech) => <li>{tech}</li>)}</ul>
+          <div className="d-flex project-badge mt-2">
+            {githubLink && (
+              <i
+                className="fab fa-github fa-fw github-badge"
+                onClick={githubLink}
+              />
+            )}
+            {productionLink && (
+              <i
+                className="fab fa-chrome fa-fw website-badge"
+                onClick={productionLink}
+              />
+            )}
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ export default function Contact() {
       </div>
 
       <div className="row mx-5">
-        <div className="col-6">
+        <div className="col-md-12 col-lg-6 align-self-center hover-zoom bg-image order-lg-2 order-1 mb-5 m-lg-0">
           <div className="title-dark">Get in touch.</div>
           <div className="about-content">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos quia
@@ -18,7 +18,7 @@ export default function Contact() {
             nam repudiandae rerum eius officiis? Laboriosam nostrum earum
           </div>
         </div>
-        <div className="col-6">
+        <div className=" col-md-12 col-lg-6  align-self-center order-lg-1 order-2 ">
           <div className="title-dark">Message me</div>
           <div className="row mb-3">
             <div className="col">

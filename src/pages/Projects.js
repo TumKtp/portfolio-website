@@ -3,55 +3,47 @@ import ProjectCard from "../components/ProjectCard";
 const slideData = [
   {
     index: 0,
-    headline: "New Fashion Apparel Lorem, ",
-    desc:
-      "ipsum dolor sit amet consectetur adipisicing elit. Magni, aperiam in!Quibusdam quas dolore eaque asperiores nulla dicta ipsam aperiam inventoredolorum sint sunt libero explicabo labore, nam qui, minima incidunt! Quod dolore corporis perspiciatis sequi recusandae atque fuga officia, iste adipisci veniamquia odio dolorum voluptatem asperiores doloribus quidem.",
-    button: "Shop now",
+    headline: "Huayitang TCM Clinic",
+
     src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/fashion.jpg",
+    githubLink:
+      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/fashion.jpg",
+    productionLink:
+      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/fashion.jpg",
+    techStack: ["React (NextJS)", "Bootstrap & Material Design", "Firebase"],
   },
   {
     index: 1,
-    headline: "In The Wilderness",
-    button: "Book travel",
-    desc:
-      "ipsum dolor sit amet consectetur adipisicing elit. Magni, aperiam in!Quibusdam quas dolore eaque asperiores nulla dicta ipsam aperiam inventoredolorum sint sunt libero explicabo labore, nam qui, minima incidunt! Quod dolore corporis perspiciatis sequi recusandae atque fuga officia, iste adipisci veniamquia odio dolorum voluptatem asperiores doloribus quidem.",
-
+    headline: "Inventory System",
     src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg",
+    githubLink:
+      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/fashion.jpg",
+    productionLink:
+      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/fashion.jpg",
+    techStack: ["React", "Express", "Mongo", "NodeJS", "Bootstrap", "Heroku"],
   },
   {
     index: 2,
-    headline: "For Your Current Mood",
-    desc:
-      "ipsum dolor sit amet consectetur adipisicing elit. Magni, aperiam in!Quibusdam quas dolore eaque asperiores nulla dicta ipsam aperiam inventoredolorum sint sunt libero explicabo labore, nam qui, minima incidunt! Quod dolore corporis perspiciatis sequi recusandae atque fuga officia, iste adipisci veniamquia odio dolorum voluptatem asperiores doloribus quidem.",
-
-    button: "Listen",
+    headline: "TODO List",
+    desc: "Traditional Chinese Medicine clinic website.",
     src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/guitar.jpg",
   },
   {
     index: 3,
-    headline: "Focus On The Writing",
-    desc:
-      "ipsum dolor sit amet consectetur adipisicing elit. Magni, aperiam in!Quibusdam quas dolore eaque asperiores nulla dicta ipsam aperiam inventoredolorum sint sunt libero explicabo labore, nam qui, minima incidunt! Quod dolore corporis perspiciatis sequi recusandae atque fuga officia, iste adipisci veniamquia odio dolorum voluptatem asperiores doloribus quidem.",
-
-    button: "Get Focused",
+    headline: "Image Gallery",
+    desc: "Traditional Chinese Medicine clinic website.",
     src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/typewriter.jpg",
   },
   {
     index: 4,
     headline: "Focus On The Writing",
-    desc:
-      "ipsum dolor sit amet consectetur adipisicing elit. Magni, aperiam in!Quibusdam quas dolore eaque asperiores nulla dicta ipsam aperiam inventoredolorum sint sunt libero explicabo labore, nam qui, minima incidunt! Quod dolore corporis perspiciatis sequi recusandae atque fuga officia, iste adipisci veniamquia odio dolorum voluptatem asperiores doloribus quidem.",
-
-    button: "Get Focused",
+    desc: "Traditional Chinese Medicine clinic website.",
     src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/typewriter.jpg",
   },
   {
     index: 5,
     headline: "Focus On The Writing",
-    desc:
-      "ipsum dolor sit amet consectetur adipisicing elit. Magni, aperiam in!Quibusdam quas dolore eaque asperiores nulla dicta ipsam aperiam inventoredolorum sint sunt libero explicabo labore, nam qui, minima incidunt! Quod dolore corporis perspiciatis sequi recusandae atque fuga officia, iste adipisci veniamquia odio dolorum voluptatem asperiores doloribus quidem.",
-
-    button: "Get Focused",
+    desc: "Traditional Chinese Medicine clinic website.",
     src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/typewriter.jpg",
   },
 ];

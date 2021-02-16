@@ -6,10 +6,10 @@ export default function About() {
       <div className="heading d-flex justify-content-center mb-4">About Me</div>
       <div className="row justify-content-center mx-1 mx-xl-5 mb-5">
         <img
-          className="col-12 col-md-5 col-xl-3 about-img align-self-center"
+          className="col-12 col-md-6 col-xl-5 align-self-center about-img"
           src={process.env.PUBLIC_URL + "/images/about-01.jpg"}
         />
-        <div className="col-12 col-md-6 col-xl-9 align-self-center mt-3 mt-s-0">
+        <div className="col-12 col-md-6 col-xl-7 align-self-center mt-3 mt-s-0">
           <div className="title">
             I'm Kittiphop and I'm <span>Developer</span>
           </div>
@@ -28,6 +28,7 @@ export default function About() {
             <span>More Info</span>
           </button>
         </div>
+        <div className="col-12 col-md-6 col-xl-9 align-self-center mt-3 mt-s-0"></div>
       </div>
     </section>
   );
