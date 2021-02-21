@@ -4,8 +4,7 @@ const slideData = [
   {
     index: 0,
     headline: "Huayitang TCM Clinic",
-
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/fashion.jpg",
+    src: process.env.PUBLIC_URL + "/images/huayitang.jpg",
     githubLink:
       "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/fashion.jpg",
     productionLink:
@@ -15,7 +14,7 @@ const slideData = [
   {
     index: 1,
     headline: "Inventory System",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/forest.jpg",
+    src: process.env.PUBLIC_URL + "/images/inventory-system.jpg",
     githubLink:
       "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/fashion.jpg",
     productionLink:
@@ -24,27 +23,37 @@ const slideData = [
   },
   {
     index: 2,
-    headline: "TODO List",
-    desc: "Traditional Chinese Medicine clinic website.",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/guitar.jpg",
+    headline: "Campground Website",
+    src: process.env.PUBLIC_URL + "/images/yelpcamp.jpg",
+    githubLink:
+      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/fashion.jpg",
+    productionLink:
+      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/fashion.jpg",
+    techStack: ["NodeJS", "MongoDB", "Express", "Bootstrap", "Heroku"],
   },
   {
     index: 3,
-    headline: "Image Gallery",
-    desc: "Traditional Chinese Medicine clinic website.",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/typewriter.jpg",
+    headline: "Mobile Application",
+    src: process.env.PUBLIC_URL + "/images/flutter-app.jpg",
+    githubLink:
+      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/fashion.jpg",
+    techStack: ["Flutter", "Firebase"],
   },
   {
     index: 4,
-    headline: "Focus On The Writing",
-    desc: "Traditional Chinese Medicine clinic website.",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/typewriter.jpg",
+    headline: "Blog Website",
+    src: process.env.PUBLIC_URL + "/images/blog-website.jpg",
+    githubLink:
+      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/fashion.jpg",
+    techStack: ["Django", "HTML", "CSS"],
   },
   {
     index: 5,
-    headline: "Focus On The Writing",
-    desc: "Traditional Chinese Medicine clinic website.",
-    src: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/typewriter.jpg",
+    headline: "TODO REST API",
+    src: process.env.PUBLIC_URL + "/images/django-rest.jpg",
+    githubLink:
+      "https://s3-us-west-2.amazonaws.com/s.cdpn.io/225363/fashion.jpg",
+    techStack: ["Django REST framework"],
   },
 ];
 
@@ -73,7 +82,7 @@ export default function Projects() {
   };
 
   return (
-    <section className="py-5">
+    <section className="py-5 project-sec">
       <div className="heading d-flex justify-content-center">Projects</div>
       <div className="slider">
         <ul className="slider__wrapper" style={wrapperTransform}>

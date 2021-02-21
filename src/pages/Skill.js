@@ -1,34 +1,38 @@
 import React, { useEffect } from "react";
 import SkillBar from "../components/SkillBar";
 const skillList = [
-  { title: "HTML5", percent: "80%" },
-  { title: "CSS3", percent: "70%" },
-  { title: "jQuery", percent: "60%" },
-  { title: "Adobe", percent: "50%" },
-  { title: "SEO", percent: "40%" },
+  { title: "HTML", percent: "85%" },
+  { title: "JavaScript", percent: "90%" },
+  { title: "C++", percent: "90%" },
   { title: "Python", percent: "80%" },
-  { title: "JavaScript", percent: "80%" },
-  { title: "GoogleApi", percent: "70%" },
-  { title: "React", percent: "90%" },
-  { title: "NodeJS", percent: "95%" },
-  { title: "MongoDB", percent: "90%" },
+  { title: "PHP", percent: "65%" },
+  { title: "Django", percent: "70%" },
+  { title: "React", percent: "87%" },
+  { title: "NextJS", percent: "85%" },
+  { title: "NodeJS", percent: "90%" },
+  { title: "MongoDB", percent: "80%" },
   { title: "Express", percent: "90%" },
-  { title: "DataSci", percent: "80%" },
-  { title: "Heroku", percent: "85%" },
+  { title: "Firebase", percent: "85%" },
+  { title: "Heroku", percent: "80%" },
+  { title: "Bootstrap", percent: "90%" },
+  { title: "Figma", percent: "60%" },
+  { title: "SEO", percent: "80%" },
 ];
 export default function Skill() {
   return (
-    <section className="skill pt-5 pb-5">
-      <div className="heading-dark d-flex justify-content-center mb-4">
-        Skills
-      </div>
+    <section className="skill py-5 skill-sec">
+      <div className="container">
+        <div className="heading-dark d-flex justify-content-center mb-4">
+          Skills
+        </div>
 
-      <div className="row mx-3">
-        {skillList.map((skill) => (
-          <div className="col-lg-6">
-            <SkillBar title={skill.title} percent={skill.percent} />
-          </div>
-        ))}
+        <div className="row">
+          {skillList.map((skill) => (
+            <div className="col-lg-6">
+              <SkillBar title={skill.title} percent={skill.percent} />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

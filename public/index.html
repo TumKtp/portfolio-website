@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <link href="%PUBLIC_URL%/images/home.jpg" />
     <link href="%PUBLIC_URL%/images/about-01.jpg" />
 
@@ -12,13 +11,11 @@
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -50,7 +47,7 @@
       integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
       crossorigin="anonymous"
     />
-    <title>React App</title>
+    <title>TumKTP</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -69,26 +66,30 @@
   <script>
     console.log("Connected");
     const allSkillBars = document.querySelectorAll(".skillbar");
-    console.log(allSkillBars);
+    // console.log(allSkillBars);
     window.addEventListener("scroll", function () {
-      console.log(allSkillBars[0].dataset.percent);
+      // console.log(allSkillBars[0].dataset.percent);
       const scrollPos = window.scrollY;
       if (scrollPos > 20)
         document.querySelector(".navbar").classList.add("sticky");
       else document.querySelector(".navbar").classList.remove("sticky");
 
-      console.log(scrollPos);
+      // console.log(scrollPos);
       if (scrollPos + window.innerHeight >= allSkillBars[0].offsetTop + 30) {
         if (allSkillBars[0].children[1].classList.contains("animated")) {
           console.log("DONE");
         } else {
           allSkillBars.forEach((skill) => {
-            console.log(skill);
+            // console.log(skill);
             skill.children[1].style.width = skill.dataset.percent;
             skill.children[1].classList.add("animated");
           });
         }
       }
     });
+    const toAbout = () => {
+      const aboutSection = document.querySelector(".about-pos");
+      aboutSection.scrollIntoView();
+    };
   </script>
 </html>

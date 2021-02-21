@@ -11,18 +11,13 @@ export default function About() {
         />
         <div className="col-12 col-md-6 col-xl-7 align-self-center mt-3 mt-s-0">
           <div className="title">
-            I'm Kittiphop and I'm <span>Developer</span>
+            I'm Kittiphop and I'm a <span>Developer</span>
           </div>
           <div className="about-content">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos quia
-            nam dolore ipsa cumque eum commodi delectus qui, voluptates quasi
-            dolor laudantium autem ipsam quas minima facilis modi adipisci ea.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat
-            nam repudiandae rerum eius officiis? Laboriosam nostrum earum
-            inventore laborum distinctio, fugit tempora illo unde modi Lorem
-            ipsum, dolor sit amet consectetur adipisicing elit. Repellat nam
-            repudiandae rerum eius officiis? Laboriosam nostrum earum inventore
-            laborum distinctio, fugit tempora illo unde modi
+            I am so interested in technologies and want to learn more about how
+            to become a Full-Stack developer. Moreover, I always spend my free
+            time learning new technologies by myself. In the future, I want to
+            be a start-up founder.
           </div>
           <button className=" btn-about hover-border-1 mt-3">
             <span>More Info</span>
